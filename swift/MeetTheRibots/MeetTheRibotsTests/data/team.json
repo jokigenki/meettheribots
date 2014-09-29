@@ -1,0 +1,124 @@
+[
+  {
+    "firstName": "Antony",
+    "lastName": "Ribot",
+    "nickname": "The ShowPig™",
+    "hexColor": "#f49637",
+    "role": "Co-founder and glue",
+    "id": "antony",
+    "url": "http://devchallenge.ribot.io/api/team/antony"
+  },
+  {
+    "firstName": "Trevor",
+    "lastName": "May",
+    "nickname": "Trevelator",
+    "hexColor": "#B60042",
+    "role": "Designer",
+    "id": "trevor",
+    "url": "http://devchallenge.ribot.io/api/team/trevor"
+  },
+  {
+    "firstName": "Joe",
+    "lastName": "Birch",
+    "nickname": "Josperajoe",
+    "hexColor": "#601830",
+    "role": "Android Developer",
+    "id": "joe",
+    "url": "http://devchallenge.ribot.io/api/team/joe"
+  },
+  {
+    "firstName": "Ben",
+    "lastName": "Breckler",
+    "nickname": "UI Astronaut",
+    "hexColor": "#3a8b7f",
+    "role": "Interface & Motion Designer",
+    "id": "ben",
+    "url": "http://devchallenge.ribot.io/api/team/ben"
+  },
+  {
+    "firstName": "Jerome",
+    "lastName": "Ribot",
+    "hexColor": "#4695b6",
+    "role": "Chief Design Officer",
+    "id": "jerome",
+    "url": "http://devchallenge.ribot.io/api/team/jerome"
+  },
+  {
+    "firstName": "Jason",
+    "lastName": "Fry",
+    "nickname": "Javascript Object Notation",
+    "hexColor": "#9bd7bb",
+    "role": "Android (Scrum) Master Builder",
+    "id": "jason",
+    "url": "http://devchallenge.ribot.io/api/team/jason"
+  },
+  {
+    "firstName": "Matt",
+    "lastName": "Oakes",
+    "hexColor": "#e8551a",
+    "role": "Developer",
+    "id": "matt",
+    "url": "http://devchallenge.ribot.io/api/team/matt"
+  },
+  {
+    "firstName": "Manuel",
+    "lastName": "Marcos Regalado",
+    "nickname": "Manu",
+    "hexColor": "#90aa9a",
+    "role": "iOS Developer",
+    "id": "manuel",
+    "url": "http://devchallenge.ribot.io/api/team/manuel"
+  },
+  {
+    "firstName": "Tara",
+    "lastName": "Etherington",
+    "nickname": "Tars",
+    "hexColor": "#d3487f",
+    "role": "UX Designer",
+    "id": "tara",
+    "url": "http://devchallenge.ribot.io/api/team/tara"
+  },
+  {
+    "firstName": "Stefan",
+    "lastName": "Pearson",
+    "nickname": "Thor",
+    "hexColor": "#324e80",
+    "role": "Developer",
+    "id": "stefan",
+    "url": "http://devchallenge.ribot.io/api/team/stefan"
+  },
+  {
+    "firstName": "Rob",
+    "lastName": "Douglas",
+    "nickname": "Bobby D",
+    "hexColor": "#8d4a8f",
+    "role": "Designer/Developer",
+    "id": "rob",
+    "url": "http://devchallenge.ribot.io/api/team/rob"
+  },
+  {
+    "firstName": "Ivan",
+    "lastName": "Carballo",
+    "nickname": "Spanish Gosling",
+    "role": "Android developer",
+    "id": "ivan",
+    "url": "http://devchallenge.ribot.io/api/team/ivan"
+  },
+  {
+    "firstName": "Olly",
+    "lastName": "Thomas",
+    "nickname": "The Mayor",
+    "hexColor": "#233e00",
+    "role": "Designer",
+    "id": "olly",
+    "url": "http://devchallenge.ribot.io/api/team/olly"
+  },
+  {
+    "firstName": "Lindsay",
+    "lastName": "Scott",
+    "hexColor": "#ecc973",
+    "role": "Studio Manager",
+    "id": "lindsay",
+    "url": "http://devchallenge.ribot.io/api/team/lindsay"
+  }
+]

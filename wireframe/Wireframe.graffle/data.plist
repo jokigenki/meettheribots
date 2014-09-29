@@ -6932,7 +6932,7 @@ antony@ribot.co.uk}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-09-25 00:34:35 +0000</string>
+	<string>2014-09-27 23:14:35 +0000</string>
 	<key>Modifier</key>
 	<string>Owen Bennett</string>
 	<key>NotesVisible</key>
@@ -7027,15 +7027,15 @@ antony@ribot.co.uk}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-84, -87}, {951, 735}}</string>
+		<string>{{595.5, 12.375}, {118.875, 91.875}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>8</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>Canvas 1</string>
-				<real>1</real>
-				<real>2</real>
+				<real>8</real>
+				<real>4</real>
 			</array>
 		</array>
 	</dict>
