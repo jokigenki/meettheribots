@@ -11,13 +11,13 @@ import UIKit
 
 class JSONTeamMemberParser {
     
-    var workingData: Dictionary<String, AnyObject>?
+    var workingData: [String: AnyObject]?
     var workingTeamMember: TeamMember?
     
     init() {
     }
     
-    func parse (json: Dictionary<String, AnyObject>?) -> TeamMember? {
+    func parse (json: [String: AnyObject]?) -> TeamMember? {
         if (json == nil) { return nil }
         workingData = json
         if let id = parseId() {

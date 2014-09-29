@@ -11,15 +11,19 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo_small_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="djO-MQ-1GA">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_small_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="djO-MQ-1GA">
                     <rect key="frame" x="256" y="384" width="256" height="256"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="256" id="A2z-MF-zhe"/>
-                        <constraint firstAttribute="width" constant="256" id="XEI-0K-PfL"/>
+                        <constraint firstAttribute="height" constant="256" id="3Cx-V6-n7a"/>
+                        <constraint firstAttribute="width" constant="256" id="w3T-B9-AkP"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="djO-MQ-1GA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Cg-ES-vDG"/>
+                <constraint firstItem="djO-MQ-1GA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ptm-lH-9U1"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
             <point key="canvasLocation" x="548" y="455"/>

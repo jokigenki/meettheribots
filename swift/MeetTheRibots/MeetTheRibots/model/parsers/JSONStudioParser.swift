@@ -10,13 +10,13 @@ import Foundation
 
 class JSONStudioParser {
     
-    var workingData: Dictionary<String, AnyObject>?
+    var workingData: [String: AnyObject]?
     var workingStudio: Studio!
     
     init () {
     }
     
-    func parse (json: Dictionary<String, AnyObject>?) -> Studio {
+    func parse (json: [String: AnyObject]?) -> Studio {
         workingData = json
         workingStudio = Studio()
         var parser =

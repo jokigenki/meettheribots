@@ -16,7 +16,9 @@ class MainGridViewController: UICollectionViewController, UICollectionViewDelega
     // observers
     var modelObserver: NSObjectProtocol!
     var imageObserver: NSObjectProtocol!
+    var imageDisplayObserver: NSObjectProtocol!
     var detailView: DetailViewController!
+    var imageView: ImageViewController?
     
     // MARK: - LifeCycle
     
@@ -30,8 +32,10 @@ class MainGridViewController: UICollectionViewController, UICollectionViewDelega
         let nc = NSNotificationCenter.defaultCenter()
         nc.removeObserver(modelObserver, name: Events.MODEL_UPDATED.toRaw(), object: nil)
         nc.removeObserver(imageObserver, name: Events.IMAGE_LOADED.toRaw(), object: nil)
+        nc.removeObserver(imageDisplayObserver, name: Events.DISPLAY_IMAGE.toRaw(), object: nil)
         modelObserver = nil
         imageObserver = nil
+        imageDisplayObserver = nil
     }
     
     override func viewDidLoad() {
@@ -48,6 +52,13 @@ class MainGridViewController: UICollectionViewController, UICollectionViewDelega
             let userInfo = note.userInfo as [String: String]
             if let url = userInfo["key"] {
                 self.onImageLoaded(url)
+            }
+        })
+        imageDisplayObserver = nc.addObserverForName(Events.DISPLAY_IMAGE.toRaw(), object: nil, queue: mq, usingBlock: { note in
+            
+            let userInfo = note.userInfo as [String: String]
+            if let url = userInfo["key"] {
+                self.onImageDisplay(url)
             }
         })
         
@@ -137,5 +148,13 @@ class MainGridViewController: UICollectionViewController, UICollectionViewDelega
         // TODO: it's wasteful to reload everything just to replace the image
         // find the cell using the url in the note, and update just that cell
         self.collectionView!.reloadData()
+    }
+    
+    func onImageDisplay (url: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        imageView = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.IMAGE_VIEW.toRaw()) as? ImageViewController;
+        imageView?.setImage(model.imageProxy.getImage(url)!)
+        presentViewController(imageView!, animated: true, completion: {})
+        
     }
 }

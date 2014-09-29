@@ -74,37 +74,40 @@ class DetailViewController: UIViewController {
             self.view.addSubview(detailScrollView!)
         }
         
+        let startX: CGFloat = 1024 // TODO: shouldn't be hardcoded, but will only affect animation on iPhone
+        
+        // TODO: all views currently have a hardcoded height. This will probably need to be changed for iPhone etc.
         if (detailHeader == nil) {
             detailHeader = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_HEADER.toRaw()) as? DetailHeaderViewController;
-            addView(detailHeader!.view, startX: 1024, startY: 0, height: 374)
+            addView(detailHeader!.view, startX: startX, startY: 0, height: 374)
         }
         
         if (detailDescription == nil) {
             detailDescription = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_DESCRIPTION.toRaw()) as? DetailDescriptionViewController;
-            addView(detailDescription!.view, startX: 1024, startY: 374, height: 260)
+            addView(detailDescription!.view, startX: startX, startY: 374, height: 260)
         }
         
         if (detailFacts == nil) {
             detailFacts = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_FACTS.toRaw()) as?DetailFactsViewController;
-            addView(detailFacts!.view, startX: 1024, startY: 634, height: 195)
+            addView(detailFacts!.view, startX: startX, startY: 634, height: 195)
         }
         
         if (detailAddress == nil) {
             detailAddress = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_ADDRESS.toRaw()) as?DetailAddressViewController;
-            addView(detailAddress!.view, startX: 1024, startY:
+            addView(detailAddress!.view, startX: startX, startY:
                 374, height: 260)
         }
         
         if (detailPhotos == nil) {
             detailPhotos = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_PHOTOS.toRaw()) as?DetailPhotosViewController;
             let frame = detailAddress!.view.frame
-            addView(detailPhotos!.view, startX: 1024, startY: 634, height: 195)
+            addView(detailPhotos!.view, startX: startX, startY: 634, height: 195)
             detailPhotos!.model = model
         }
         
         if (detailTwitter == nil) {
             detailTwitter = storyboard.instantiateViewControllerWithIdentifier(StoryboardIDs.DETAIL_TWITTER.toRaw()) as?DetailTwitterViewController;
-            addView(detailTwitter!.view, startX: 1024, startY: 829, height: 195)
+            addView(detailTwitter!.view, startX: startX, startY: 829, height: 195)
         }
         
         teamMemberDisplayViews = [detailHeader!, detailDescription!, detailFacts!, detailTwitter!]

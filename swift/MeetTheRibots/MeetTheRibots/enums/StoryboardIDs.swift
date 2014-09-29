@@ -20,4 +20,5 @@ enum StoryboardIDs: String {
     case DETAIL_PHOTOS = "DetailPhotos"
     case MAIN_GRID_CELL = "MainGridCell"
     case PHOTO_CELL = "PhotoCell"
+    case IMAGE_VIEW = "ImageView"
 }

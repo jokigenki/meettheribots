@@ -21,7 +21,7 @@ class JSONTeamParser {
         let parser = JSONTeamMemberParser()
         
         for obj:AnyObject in data! {
-            if let dict = obj as? Dictionary<String, AnyObject> {
+            if let dict = obj as? [String: AnyObject] {
                 if let member = parser.parse(dict) {
                     team.addMember(member)
                 }

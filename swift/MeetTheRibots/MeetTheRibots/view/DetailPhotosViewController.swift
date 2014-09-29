@@ -39,6 +39,10 @@ class DetailPhotosViewController: UICollectionViewController, UICollectionViewDe
     // MARK: - UICollectionViewDelegate
     override func collectionView(collectionView: UICollectionView,
         didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    
+        let imageKey = photos[indexPath.item]
+        let nc = NSNotificationCenter.defaultCenter()
+        nc.postNotificationName(Events.DISPLAY_IMAGE.toRaw(), object: nil, userInfo: ["key": imageKey])
     }
     
     

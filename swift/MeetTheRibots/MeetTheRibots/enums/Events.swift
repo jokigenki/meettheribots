@@ -15,4 +15,6 @@ enum Events: String {
     case MODEL_UPDATED = "Event_MODEL_UPDATED"
     case IMAGE_LOADED = "Event_IMAGE_LOADED"
     case CLOSE_DETAIL_VIEW = "Event_CLOSE_DETAIL_VIEW"
+    case CLOSE_IMAGE_VIEW = "Event_CLOSE_IMAGE_VIEW"
+    case DISPLAY_IMAGE = "Event_DISPLAY_IMAGE"
 }

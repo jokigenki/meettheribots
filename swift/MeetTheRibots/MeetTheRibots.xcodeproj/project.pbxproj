@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435C47B319D9AC7C00AE6D96 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C47B219D9AC7C00AE6D96 /* ImageViewController.swift */; };
+		435C47B419D9AC7C00AE6D96 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C47B219D9AC7C00AE6D96 /* ImageViewController.swift */; };
 		4381DE6B19D4D7D90002CE13 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381DE6A19D4D7D90002CE13 /* DataConnection.swift */; };
 		4381DE6C19D4D7D90002CE13 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381DE6A19D4D7D90002CE13 /* DataConnection.swift */; };
 		4381DE6E19D4DDA90002CE13 /* DataConnectionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381DE6D19D4DDA90002CE13 /* DataConnectionStub.swift */; };
@@ -34,9 +36,7 @@
 		43B6FED919D41FFA0096E42F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FED819D41FFA0096E42F /* AppDelegate.swift */; };
 		43B6FEDC19D41FFA0096E42F /* MeetTheRibots.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FEDA19D41FFA0096E42F /* MeetTheRibots.xcdatamodeld */; };
 		43B6FEDE19D41FFA0096E42F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FEDD19D41FFA0096E42F /* ViewController.swift */; };
-		43B6FEE119D41FFA0096E42F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B6FEDF19D41FFA0096E42F /* Main.storyboard */; };
 		43B6FEE319D41FFA0096E42F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6FEE219D41FFA0096E42F /* Images.xcassets */; };
-		43B6FEE619D41FFA0096E42F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6FEE419D41FFA0096E42F /* LaunchScreen.xib */; };
 		43B6FEF219D41FFB0096E42F /* MeetTheRibotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FEF119D41FFB0096E42F /* MeetTheRibotsTests.swift */; };
 		43B6FF0219D4204F0096E42F /* APIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FF0119D4204F0096E42F /* APIProxy.swift */; };
 		43B6FF0319D4204F0096E42F /* APIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FF0119D4204F0096E42F /* APIProxy.swift */; };
@@ -125,6 +125,8 @@
 		43B6FF9E19D4832A0096E42F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FF9D19D4832A0096E42F /* StringExtension.swift */; };
 		43B6FF9F19D4832A0096E42F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FF9D19D4832A0096E42F /* StringExtension.swift */; };
 		43B6FFA219D487880096E42F /* UIColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6FFA019D487880096E42F /* UIColorExtensionTest.swift */; };
+		43C6A06119D9A8CA00EE4378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B6FEDF19D41FFA0096E42F /* Main.storyboard */; };
+		43C6A06219D9A8CA00EE4378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6FEE419D41FFA0096E42F /* LaunchScreen.xib */; };
 		43D7F56119D6410100EECF67 /* StudioFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7F56019D6410100EECF67 /* StudioFields.swift */; };
 		43D7F56219D6442000EECF67 /* StudioFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7F56019D6410100EECF67 /* StudioFields.swift */; };
 		43D7F56419D64A6A00EECF67 /* APIProxyTestsRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7F56319D64A6A00EECF67 /* APIProxyTestsRemote.swift */; };
@@ -180,6 +182,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435C47B219D9AC7C00AE6D96 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = view/ImageViewController.swift; sourceTree = "<group>"; };
 		4381DE6A19D4D7D90002CE13 /* DataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConnection.swift; path = model/DataConnection.swift; sourceTree = "<group>"; };
 		4381DE6D19D4DDA90002CE13 /* DataConnectionStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConnectionStub.swift; path = model/DataConnectionStub.swift; sourceTree = "<group>"; };
 		4381DE6F19D4E0290002CE13 /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
@@ -430,6 +433,7 @@
 				43F8959319D8414500223DF7 /* DetailAddressViewController.swift */,
 				43F8959F19D84BE200223DF7 /* DetailPhotosViewController.swift */,
 				43F895A519D8864800223DF7 /* DetailDataDisplay.swift */,
+				435C47B219D9AC7C00AE6D96 /* ImageViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -648,6 +652,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C6A06119D9A8CA00EE4378 /* Main.storyboard in Resources */,
+				43C6A06219D9A8CA00EE4378 /* LaunchScreen.xib in Resources */,
 				43B6FF8119D44DBE0096E42F /* stefan.json in Resources */,
 				43B6FF6B19D44DBE0096E42F /* lindsay_s.png in Resources */,
 				43B6FF5B19D44DBE0096E42F /* ben_l.png in Resources */,
@@ -666,8 +672,6 @@
 				43B6FF7F19D44DBE0096E42F /* rob.json in Resources */,
 				43F8958019D781B100223DF7 /* logo_small_blue.png in Resources */,
 				43B6FF5919D44DBE0096E42F /* antony_s.png in Resources */,
-				43B6FEE119D41FFA0096E42F /* Main.storyboard in Resources */,
-				43B6FEE619D41FFA0096E42F /* LaunchScreen.xib in Resources */,
 				43B6FF6519D44DBE0096E42F /* jerome_s.png in Resources */,
 				43B6FF6119D44DBE0096E42F /* jerome_l.png in Resources */,
 				43B6FF4F19D44DBE0096E42F /* manuel.json in Resources */,
@@ -764,6 +768,7 @@
 				43B6FF0219D4204F0096E42F /* APIProxy.swift in Sources */,
 				43F895A019D84BE200223DF7 /* DetailPhotosViewController.swift in Sources */,
 				43D7F56119D6410100EECF67 /* StudioFields.swift in Sources */,
+				435C47B319D9AC7C00AE6D96 /* ImageViewController.swift in Sources */,
 				43F8959119D7B19A00223DF7 /* DetailTwitterViewController.swift in Sources */,
 				43F8959D19D849B500223DF7 /* StoryboardIDs.swift in Sources */,
 				43F8962219D8E47600223DF7 /* UITextViewExtension.swift in Sources */,
@@ -825,6 +830,7 @@
 				438EAB4219D63F68002D0CB1 /* JSONStudioParserTests.swift in Sources */,
 				43B6FF9F19D4832A0096E42F /* StringExtension.swift in Sources */,
 				43E8E9D719D77EED00783752 /* Config.swift in Sources */,
+				435C47B419D9AC7C00AE6D96 /* ImageViewController.swift in Sources */,
 				438EAB3A19D62EEF002D0CB1 /* JSONStudioParser.swift in Sources */,
 				43F8962319D8E47600223DF7 /* UITextViewExtension.swift in Sources */,
 				438EAB3E19D63C88002D0CB1 /* StudioTests.swift in Sources */,
